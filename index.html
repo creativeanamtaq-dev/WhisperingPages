@@ -22,14 +22,14 @@ header h1 { margin:0; font-size:36px; }
     max-width: 900px;
     margin: 30px auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 0 20px;
 }
 .story {
     background-color:white;
     border-radius:10px;
-    box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* each card has its own shadow */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
     padding:20px;
     cursor: pointer;
     overflow: hidden;
@@ -44,26 +44,22 @@ header h1 { margin:0; font-size:36px; }
     transition: max-height 0.5s ease;
 }
 .story a {
-    display:inline-block;
+    display:none; /* hide by default */
     margin-top:10px;
     text-decoration:none;
     color:white;
     background-color:#4a90e2;
     padding:8px 12px;
     border-radius:5px;
-    max-height:0;
-    overflow:hidden;
-    transition: max-height 0.5s ease;
 }
-/* Active story shows content */
-.story.active p,
-.story.active a { max-height: 500px; }
+/* Active story shows content and button */
+.story.active p { max-height: 500px; }
+.story.active a { display:inline-block; }
 
 .story:hover { transform: translateY(-3px); }
 
 footer { text-align:center; padding:20px 0; background-color:#eee; color:#555; }
 
-/* Mobile: stack cards */
 @media (max-width: 768px) {
     .container { grid-template-columns: 1fr; }
 }
