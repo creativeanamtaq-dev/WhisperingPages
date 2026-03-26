@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Story Website</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #4a90e2;
-            color: white;
-            text-align: center;
-            padding: 30px 0;
-        }
-        header h1 { margin: 0; font-size: 36px; }
-        .container {
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 0 20px;
-        }
-        .story {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            margin-bottom: 15px;
-            padding: 20px;
-        }
-        .story h2 {
-            color: #333;
-            margin-top: 0;
-            cursor: pointer;
-        }
-        .story p {
-            color: #555;
-            line-height: 1.6;
-            display: none; /* hide full story initially */
-        }
-        .story a {
-            display: inline-block;
-            margin-top: 10px;
-            text-decoration: none;
-            color: white;
-            background-color: #4a90e2;
-            padding: 8px 12px;
-            border-radius: 5px;
-            display: none; /* hide Read More initially */
-        }
-        .story.active p,
-        .story.active a {
-            display: block; /* show when active */
-        }
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            background-color: #eee;
-            color: #555;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Story Website</title>
+<style>
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0; }
+    header { background-color: #4a90e2; color: white; text-align: center; padding: 30px 0; }
+    header h1 { margin: 0; font-size: 36px; }
+    .container { max-width: 800px; margin: 30px auto; padding: 0 20px; }
+    .story { background-color: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px; padding: 20px; }
+    .story h2 { color: #333; margin-top: 0; cursor: pointer; }
+    .story p { color: #555; line-height: 1.6; display: none; }
+    .story a { display: inline-block; margin-top: 10px; text-decoration: none; color: white; background-color: #4a90e2; padding: 8px 12px; border-radius: 5px; display: none; }
+    .story.active p, .story.active a { display: block; }
+    footer { text-align: center; padding: 20px 0; background-color: #eee; color: #555; }
+</style>
 </head>
 <body>
-    <header>
-        <h1>My Story World</h1>
-        <p>Click a story to expand and read more!</p>
-    </header>
+<header>
+    <h1>My Story World</h1>
+    <p>Click a story to expand and read more!</p>
+</header>
 
-    <div class="container">
-        <div class="story">
-            <h2>The New Girl’s Rules</h2>
-            <p>A mysterious new girl, Elara, joins school and quickly becomes popular—but she follows strange rules: never speaks after sunset, never shares personal details, and leaves school exactly at the same time every day.</p>
-            <a href="https://docs.google.com/document/d/1H4ev1FDHgbsLq9TraTo8B4NdhUk2KcbzkS8VY27jZHM/edit?tab=t.0#heading=h.sckg8x9ax8my" target="_blank">Read More</a>
-        </div>
+<div class="container">
 
-        <div class="story">
-            <h2>Group Chat Betrayal</h2>
-            <p>A class group chat is created for studies, but soon it turns into a gossip zone. Secrets get shared, screenshots leak, and a fake account exposes everyone’s secrets… but the twist is shocking!</p>
-            <a href="https://docs.google.com/document/d/1-DZNH8D3-z0hf-ohV38Fz5tFgbDvcYv17vzCAQXjNY0/edit?tab=t.0" target="_blank">Read More</a>
-        </div>
-
-        <div class="story">
-            <h2>Rank 1</h2>
-            <p>Anaya, a top student, has always been confident in her academic abilities—until Ayaan, a talented transfer student, joins her class. Both are fiercely determined to achieve first rank, turning every test, project, and assignment into a battlefield of strategy, skill, and focus.</p>
-            <a href="https://docs.google.com/document/d/1ihprZZkyiVGW60X_w-bR1noNfSom22nyMcll24eObW8/edit?tab=t.0#heading=h.p5n289pstacc" target="_blank">Read More</a>
-        </div>
-
-        <!-- Add more stories here using the same structure -->
+    <div class="story">
+        <h2>The New Girl’s Rules</h2>
+        <p>A mysterious new girl, Elara, joins school and quickly becomes popular—but she follows strange rules: never speaks after sunset, never shares personal details, and leaves school exactly at the same time every day.</p>
+        <a href="https://docs.google.com/document/d/1H4ev1FDHgbsLq9TraTo8B4NdhUk2KcbzkS8VY27jZHM/edit?tab=t.0#heading=h.sckg8x9ax8my" target="_blank">Read More</a>
     </div>
 
-    <footer>
-        &copy; 2026 My Story Website
-    </footer>
+    <div class="story">
+        <h2>Group Chat Betrayal</h2>
+        <p>A class group chat is created for studies, but soon it turns into a gossip zone. Secrets get shared, screenshots leak, and a fake account exposes everyone’s secrets… but the twist is shocking!</p>
+        <a href="https://docs.google.com/document/d/1-DZNH8D3-z0hf-ohV38Fz5tFgbDvcYv17vzCAQXjNY0/edit?tab=t.0" target="_blank">Read More</a>
+    </div>
 
-    <script>
-        // Make stories collapsible
-        const stories = document.querySelectorAll('.story h2');
-        stories.forEach(title => {
-            title.addEventListener('click', () => {
-                const parent = title.parentElement;
-                parent.classList.toggle('active');
-            });
+    <div class="story">
+        <h2>Rank 1</h2>
+        <p>Anaya, a top student, has always been confident in her academic abilities—until Ayaan, a talented transfer student, joins her class. Both are fiercely determined to achieve first rank, turning every test, project, and assignment into a battlefield of strategy, skill, and focus.</p>
+        <a href="https://docs.google.com/document/d/1ihprZZkyiVGW60X_w-bR1noNfSom22nyMcll24eObW8/edit?tab=t.0#heading=h.p5n289pstacc" target="_blank">Read More</a>
+    </div>
+
+    <div class="story">
+        <h2>The Answer Key Secret</h2>
+        <p>Daniyal is a hardworking but average student, constantly pressured by his parents to achieve top grades. One day, he discovers what appears to be the final exam answer key in an empty classroom. Initially hesitant, he gives in to temptation, and his grades skyrocket. But soon, mysterious new answer keys appear before exams are even announced, revealing an impossible pattern. Daniyal discovers that someone is controlling the keys, predicting the future, and watching him closely. As he becomes dependent on this power, he faces guilt, fear, and the loss of his own sense of integrity. Ultimately, Daniyal must choose between easy success and staying true to himself. In the end, he takes exams honestly, realizing that self-respect and personal growth matter more than being number one.</p>
+        <a href="https://docs.google.com/document/d/1t60AlwiDBjjHdEQ0Y4oXuEOhip115AU2wI_9cD5_lC0/edit?tab=t.0" target="_blank">Read More</a>
+    </div>
+
+    <div class="story">
+        <h2>The Girl Who Studied Time</h2>
+        <p>Meher finds a mysterious notebook that predicts exams and events, giving her perfect success. But each victory costs her friendships, freedom, and life outside the pages. She must choose: flawless success or her own happiness—and the choice changes everything.</p>
+        <a href="https://docs.google.com/document/d/1iWUnrAfprVdye1hdIhqt0qLNAp65LOwfAA_ESIu47YA/edit?tab=t.0#heading=h.57t3fpl2lbqr" target="_blank">Read More</a>
+    </div>
+
+    <div class="story">
+        <h2>Marks vs Dreams</h2>
+        <p>Sana is a top student, admired for her perfect grades, but her true passion lies in art. Pressured by her parents to become a doctor, she hides her sketchbook and dreams while excelling in science. When a new teacher recognizes her talent and encourages her, Sana faces a choice: continue chasing academic perfection or follow her own dreams. Choosing herself over expectation, she takes a risk, competes in a national art competition, and finally gains recognition for who she truly is. The story explores self-discovery, the courage to defy expectations, and redefining success on your own terms.</p>
+        <a href="https://docs.google.com/document/d/1o147jWfm89VxkvKySVTIN2yJUONilyUozCNU8I5pegc/edit?tab=t.0#heading=h.vk7tfi9uljmt" target="_blank">Read More</a>
+    </div>
+
+    <div class="story">
+        <h2>Extra Story Example</h2>
+        <p>Add your next story summary here. You can keep adding as many as you want using the same structure.</p>
+        <a href="#" target="_blank">Read More</a>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 My Story Website
+</footer>
+
+<script>
+    const stories = document.querySelectorAll('.story h2');
+    stories.forEach(title => {
+        title.addEventListener('click', () => {
+            title.parentElement.classList.toggle('active');
         });
-    </script>
+    });
+</script>
 </body>
 </html>
