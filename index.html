@@ -3,42 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+    <title>My Story Website</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
             text-align: center;
-            padding: 50px;
+            padding: 30px 0;
         }
 
-        h1 {
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .story {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .story h2 {
             color: #333;
+            margin-top: 0;
         }
 
-        p {
+        .story p {
             color: #555;
-            font-size: 18px;
+            line-height: 1.6;
         }
 
-        a {
+        .story a {
             display: inline-block;
-            margin-top: 20px;
+            margin-top: 15px;
             text-decoration: none;
             color: white;
-            background-color: #007bff;
-            padding: 10px 20px;
+            background-color: #4a90e2;
+            padding: 10px 15px;
             border-radius: 5px;
         }
 
-        a:hover {
-            background-color: #0056b3;
+        .story a:hover {
+            background-color: #357ABD;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #eee;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This is my first HTML website hosted online for free.</p>
-    <a href="https://github.com/" target="_blank">Visit GitHub</a>
+    <header>
+        <h1>My Story World</h1>
+        <p>Read amazing stories every day!</p>
+    </header>
+
+    <div class="container">
+        <div class="story">
+            <h2>The New Girl’s Rules</h2>
+            <p>A mysterious new girl, Elara, joins school and quickly becomes popular—but she follows strange rules: never speaks after sunset, never shares personal details, and leaves school exactly at the same time every day.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="story">
+            <h2>Group Chat Betrayal</h2>
+            <p>A class group chat is created for studies, but soon it turns into a gossip zone. Secrets get shared, screenshots leak, and a fake account exposes everyone’s secrets… but the twist is shocking!</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="story">
+            <h2>Another Story Title</h2>
+            <p>Add your story summary here. You can write as many stories as you like using this template.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 My Story Website
+    </footer>
 </body>
 </html>
